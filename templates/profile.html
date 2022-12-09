@@ -41,11 +41,11 @@
           <img src="{{ image_url }}"
                style="width:30%">
           {% endif %}
-          <div class="container-sm">
+          <section class="container-sm">
             <form action="/profile/{{session['_id']}}/download" method="GET" align="center">
               <input type="submit" value="이미지 받기"/>
             </form>
-          </div>
+          </section>
         </div>
 
         <form class="edit-profile-form" action="/users/{{session['_id']}}/edit">
